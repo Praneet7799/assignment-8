@@ -73,6 +73,7 @@ void LinkedList::insertNode(int x, int i)
 		tail = temp;
 		++n;
 	} 
+  }
   else 
   {
 		Node* temp = new Node;
@@ -142,7 +143,7 @@ int main() {
   cout<<"\n Enter the position and the element to add \n";
   int pos;
   cin>>pos>>var;
-  list1.addNode(var,pos);
+  list1.insertNode(var,pos);
   cout<<"\n enter the position of the element to delete ";
   cin>>pos;
 	list1.deleteNode(pos);
